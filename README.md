@@ -1,6 +1,6 @@
 # GitHub Tutorial
 
-_by <Giselle Tapia>_
+_by Giselle Tapia_
 
 ---
 ## Git vs. GitHub
