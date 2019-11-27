@@ -7,8 +7,9 @@ _by Giselle Tapia_
 The differenece of Git vs. Github
 Git   | Github
 ------|------
+Version control : keeps "snapshots" of your code|To send to git do <git add .> then <git commit -m "comment">
 * used to learn and understand | *The website where everything gets stores (like "iCloud")
-
+*yes
 ### Github:
 
 
