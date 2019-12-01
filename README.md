@@ -11,9 +11,9 @@ _What is the Git and Github?_
 
 Git | GitHub
 ---|---
-- Access Locally | - Access Globally
-- Doesn't requires wifi | - Requires wifi
-- It's on your computer | - Collaboration with other
+Access Locally | Access Globally
+Doesn't requires wifi | Requires wifi
+It's on your computer | Collaboration with other
 
 _What is a repo? Local vs Global?_
 
