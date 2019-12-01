@@ -29,11 +29,11 @@ Create a github account [here](http://github.com) (accounts are free) then go to
 
 ### Step 1: Set up your IDECS50
 
-Go to your command line and type : git config --global user.email "you@example.com"
+Go to your command line and type : `git config --global user.email "you@example.com"`
 
 - Use your email instead of the given email and add the quote don't remove them
 
-After that you type git config --global user.name "Your Name"
+After that you type git config `--global user.name "Your Name"`
 
 - Use your name then "Your Name"
 
@@ -41,7 +41,7 @@ After that you type git config --global user.name "Your Name"
 
 Go to the root directory by doing cd ~
 
-Then type: ssh-keygen -t rsa -b 4096 -C "you@example.com" 
+Then type: `ssh-keygen -t rsa -b 4096 -C "you@example.com"`
 
 - Keep pressing ENTER till you see a huge block of words
 
@@ -50,16 +50,31 @@ Then type: ssh-keygen -t rsa -b 4096 -C "you@example.com"
 
 ---
 ## Repository Setup
-
+\=.=]
 
 
 ---
 ## Workflow & Commands
 
+
+
 Command | Explaination
 ---|---
-git init | Initializes git in our directory which means making the folder into a parent function
-rm -rf .git |  Remove hidden file of .git folder or you can remove a file compeletly replace .git with file name
+`git init` | Initializes git in our directory which means making the folder into a parent function
+`rm -rf < file name >` |  remove a file compelely
+`git add .` | add a file onto the stage
+`git commit -m "message"`| saves the changes you made and add a message
+`git remote add origin URL`|
+`git push -u origin master`| This tells git to remember which remote repo & branch to push our changes to when we type git push in the future
+`git push`|Send your code or _snapshot_ into a server
+`git diff`|See the difference between your current code and you previous
+`git log`|See your last commit
+`git remote -v`|Tells you where git push will send your commits to (git status for your remote)
+`git status`|command to see what files are staged for the commit
+
+
+
+
 
 
 
