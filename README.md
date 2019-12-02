@@ -27,30 +27,20 @@ _What is a repo? Local vs Global?_
 
 Create a github account [here](http://github.com) (accounts are free) then go to [IDECS50](ide.cs50.io) and login with your github account
 
-### Step 1: Set up your IDECS50
+Follow the steps [here](https://github.com/hstatsep/ide50) to set up your IDECS50
 
-Go to your command line and type : `git config --global user.email "you@example.com"`
+### Whats is SSH?
 
-- Use your email instead of the given email and add the quote don't remove them
-
-After that you type git config `--global user.name "Your Name"`
-
-- Use your name then "Your Name"
-
-### Step 2: Set up your SSH
-
-Go to the root directory by doing cd ~
-
-Then type: `ssh-keygen -t rsa -b 4096 -C "you@example.com"`
-
-- Keep pressing ENTER till you see a huge block of words
-
-
-
+> SSH stands for Secure SHell which goes through a protocal to help someone safety access the net.
 
 ---
 ## Repository Setup
-\=.=]
+
+Before anything, your need to initialize your git, create a directory that your file will be contain at by using `Mkdir < File Name >`. A directory is a library that store your information or project within such as files, documents, images, and videos. After you initialize your git you would need to `cd < file name >` to make any changes within the directory. Then you would need to do `git init` to initialize the git which make the file into the parent function of every other. This also means that you can store anything within where it's considers as the `(master)` in your code.
+
+As you start making changes to your files start checking what you have done by using `git status` to see the changes that you're making before you're commiting any files. Saving changes or taking _snapshot_ on your work process is really important since you'll be able to track your changes over time rather then see one whole change. Another important thing is that by saving your change every so often you won't be able to lose your work unless you have auto save on. To be able to make a change you have to used `git status` to check if the file name is green before anything.
+
+To be able to take a _snapshot_ of your code you have to set the code onstage so it can be _prepare_ to take a picture. You have to use the command `git add .` or specfics files by using `git add < file name >` to get them onstage so they can be able to save your file.
 
 
 ---
@@ -64,7 +54,7 @@ Command | Explaination
 `rm -rf < file name >` |  remove a file compelely
 `git add .` | add a file onto the stage
 `git commit -m "message"`| saves the changes you made and add a message
-`git remote add origin URL`|
+`git remote add origin URL`|Set the origin of the repo just in case if you used it to make other repos
 `git push -u origin master`| This tells git to remember which remote repo & branch to push our changes to when we type git push in the future
 `git push`|Send your code or _snapshot_ into a server
 `git diff`|See the difference between your current code and you previous
