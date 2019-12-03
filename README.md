@@ -42,6 +42,7 @@ As you start making changes to your files start checking what you have done by u
 
 To be able to take a _snapshot_ of your code you have to set the code onstage so it can be _prepare_ to take a picture. You have to use the command `git add .` or specfics files by using `git add < file name >` to get them onstage so they can be able to save your file.
 
+After when you add everything onto the stage by using `git add .` you have to be ready to take the picture which saving the change you have made into your file. By using the `command git commit -m "message"` your saving the changes you by. The `-m "message"` means that your are leaving a message so you can look back at the changes you have made by using `git log`.
 
 ---
 ## Workflow & Commands
@@ -80,7 +81,7 @@ Command | Explaination
 
 > Go make changes to any file and do git add . to add them onto the stage. Then do git status and type the command onto of the green file name and you would undo the add and remove them from the stage
 
-#### Undo commits 
+#### Undo commits
 
 > What if you made a mistake and "accidentally" added a file onto the stage and commited the file. Don't worry check git status and do git reset --hard HEAD^ to undo a commit that was done by you. To undo multiple commits you can add a ~ and a number behind it to remove amount of commit you done.
 
