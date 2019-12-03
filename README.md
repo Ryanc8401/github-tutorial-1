@@ -34,13 +34,40 @@ It is a command that provides secure encrypted connection between an insecure ne
 
 ---
 ## Repository Setup
+    git init
+Initialize git in our directory (now called a repository) for version control
+    -Only do it once at the beginning 
+    
+    git add .
+adds current directories (all files that  have changed including the deleated ones and renamed)
 
-
+    git commit -m ""
+short specific message that should be in present-tense and describes what was motified in the snapshot.
 
 ---
 ## Workflow & Commands
+    status
+optional yet recommended command to see which files are staged for the community (they will show up green)
 
+    add
+adding files that have been changed or modified 
+    - RED (not staged)
+    - GREEN (staged)
+    
+    commit
+To commit is to modify you code and the command you use is git commit -m ""
+
+    push
+Git push is when you send your code or snapshot into a new server
 
 
 ---
 ## Rolling Back Changes
+    undo
+To undo a command you do 
+
+    edit
+You can always edit on your ide or on the github website
+
+    add/commit/push
+You have to do git addd . to add what you changed to the current directory and then you do git commit -m "" to commit these changes and write a message to remin d you what changes you made to your code. After you push the command to your local repo using git push -u origin master
