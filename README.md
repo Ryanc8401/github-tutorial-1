@@ -4,6 +4,14 @@ _by Ryan Chen_
 
 ---
 ## Git vs. GitHub
+The difference between Git vs. Github
+Git| Github
+---|---
+Version control | keeps "snapshots" of your code|To send to git do <git add .> then <git commit -m "comment">
+Used to learn and understand | The website where everything gets stores (like "iCloud")
+Git does not require github|Easily collaborate on files 
+Git is like a photographer (meaning you can make changes, add and delete things)|GitHub is a place that stores your “pictures” (where your code is saved and where your commits live)
+Basic workflow Git + directories or files (when we finally initialize git its called a repository)| Basic workflow for Github + Either you start from a new repository or you use one someone already created
 
 _What is the Git and Github?_
 
@@ -22,6 +30,14 @@ Repo is a short acronym for a repository, but you would wonder what is a repo an
 
 ---
 ## Initial Setup
+When making a github account 
+1. Go to github.com 
+2. Create an account
+- For your username, if you are an HSTAT student use the first part of your email and last four digits of your osis number (firstnameLastinitialLast4digetsofosisnumber Example:johnS5893)
+- the password could be your osis number or something simple enough for you to remember
+3. Next step is to set up your ide on https://ide.cs50.io/
+- for the rest of the steps follow the instructions in the link below
+    -https://docs.google.com/presentation/d/1bXBAxCa_U7NXVYxXZh3P34lhIrBNzdDVksiqqgOw4uE/edit#slide=id.g25b1b888c_00
 
 ### Step 0: Get a github account
 
@@ -49,6 +65,12 @@ Follow the steps [here](https://github.com/hstatsep/ide50) to set up your IDECS5
 
 ---
 ## Repository Setup
+    git init
+Initialize git in our directory (now called a repository) for version control
+    -Only do it once at the beginning 
+    
+    git add .
+adds current directories (all files that  have changed including the deleted ones and renamed)
 
 Before anything, your need to initialize your git, create a directory that your file will be contain at by using `Mkdir < File Name >`. A directory is a library that store your information or project within such as files, documents, images, and videos. After you initialize your git you would need to `cd < file name >` to make any changes within the directory. Then you would need to do `git init` to initialize the git which make the file into the parent function of every other. This also means that you can store anything within where it's considers as the `(master)` in your code.
 
@@ -60,6 +82,16 @@ After when you add everything onto the stage by using `git add .` you have to be
 
 ---
 ## Workflow & Commands
+    status
+An optional yet recommended command to see which files are staged for the community (they will show up green)
+
+    add
+adding files that have been changed or modified 
+    - RED (not staged)
+    - GREEN (staged)
+    
+    commit
+To commit is to modify your code and the command you use is git commit -m ""
 
 After when you already get everything start you can mess around with what you're doing start by making a repository as you were taught in repository set up by using the command `mkdir < file name >` then jump into the folder name by using `cd < file name >` so you can start by making changes to it. Don't forget this is a new step that you'll need to learn to make a file that you can type thing in you need to use this command called `touch < file name >`. After you create your new file whatever name you call it you need a way to enter the file you can enter it by using the side bar and by double clicking or using `c9 < file name >`
 
